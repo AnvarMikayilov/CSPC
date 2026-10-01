@@ -1,0 +1,49 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-09-27 21:54:36
+  Workflow ID: e7ce8b8b-0932-4e0d-ba16-83ddf659cdef
+  Platform: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+  Host: DESKTOP-ADKD4RP
+  User: anvar
+  Snakemake version: 9.27.0
+  Python version: 3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]
+  Command: /home/anvar/miniconda3/envs/cspc/bin/snakemake --cores 1 figure.png
+  Snakefile: /home/anvar/CSPC/PW1/Lab B/Snakefile
+  Base directory: /home/anvar/CSPC/PW1/Lab B
+  Run directory: /home/anvar/CSPC/PW1/Lab B
+  Working directory: /home/anvar/CSPC/PW1/Lab B
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+plot         1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Sep 27 21:54:37 2026]
+localrule plot:
+    input: decay_observed.csv
+    output: figure.png
+    jobid: 0
+    reason: Missing output files: figure.png
+    resources: tmpdir=/tmp
+Waiting at most 5 seconds for missing files:
+figure.png (missing locally)
+MissingOutputException in rule plot in file "/home/anvar/CSPC/PW1/Lab B/Snakefile", line 1:
+Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+figure.png (missing locally, parent dir not present)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error messages
+Complete log(s): /home/anvar/CSPC/PW1/Lab B/.snakemake/log/2026-09-27T215436.882286.snakemake.log
+Elapsed time: 0:00:05.875621
+WorkflowError:
+At least one job did not complete successfully.

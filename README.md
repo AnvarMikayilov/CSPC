@@ -24,3 +24,4 @@ NumPy demonstrates significant execution speedup due to optimized C-level contig
 The observed data shows an exponential decay of radioactive counts over time.
 Comparing the scatter plot of observed data with the theoretical curve $N(t) = N_0 e^{-\lambda t}$ shows that the experimental observations closely match the analytical decay law.
 The Snakemake pipeline automates the generation of `figure.png` from `decay_observed.csv` and `plot.py`, ensuring the plot is automatically rebuilt whenever input data or code changes.
+
